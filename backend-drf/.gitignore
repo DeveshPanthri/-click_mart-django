@@ -1,0 +1,82 @@
+# =======================
+# Python
+# =======================
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+MANIFEST
+
+# =======================
+# Virtual Environment
+# =======================
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# =======================
+# Django / DRF
+# =======================
+*.log
+*.pot
+*.pyc
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+static/
+
+# =======================
+# Environment Variables
+# (Keep your secret keys safe!)
+# =======================
+.env
+.env.*
+!.env.example
+
+# =======================
+# Testing & Coverage
+# =======================
+.coverage
+htmlcov/
+.pytest_cache/
+coverage.xml
+nosetests.xml
+
+# =======================
+# IDEs & Editors
+# =======================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# =======================
+# OS Files
+# =======================
+.DS_Store
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# =======================
+# Misc
+# =======================
+*.bak
+*.tmp
+*.temp
+.cache/
+pip-log.txt
