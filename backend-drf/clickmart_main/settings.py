@@ -43,6 +43,7 @@ INSTALLED_APPS = [
 
     # Local apps
     'users',
+    'products'
 ]
 
 MIDDLEWARE = [
@@ -153,3 +154,6 @@ SIMPLE_JWT = {
     "ACCESS_TOKEN_LIFETIME": timedelta(hours=4),
     "REFRESH_TOKEN_LIFETIME": timedelta(days=7),
 }
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
