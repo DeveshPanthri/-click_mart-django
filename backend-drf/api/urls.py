@@ -25,4 +25,6 @@ urlpatterns=[
 
     # cart api
     path('cart/',CartView.CartListView.as_view()),
+    path('cart/add/',CartView.AddToCartView.as_view()),
+    path('cart/items/<int:item_id>/',CartView.ManageCartItemView.as_view()),
 ]
