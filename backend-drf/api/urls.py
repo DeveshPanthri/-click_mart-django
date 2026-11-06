@@ -6,6 +6,7 @@ from rest_framework_simplejwt.views import (
 )
 from products import views as ProductView
 from carts import views as CartView
+from orders import views as OrderView
 
 
 urlpatterns=[
@@ -27,4 +28,9 @@ urlpatterns=[
     path('cart/',CartView.CartListView.as_view()),
     path('cart/add/',CartView.AddToCartView.as_view()),
     path('cart/items/<int:item_id>/',CartView.ManageCartItemView.as_view()),
+
+    #order api
+
+    path("orders/place/",OrderView.PlaceOrderView.as_view(),name="")
+    
 ]
